@@ -7,6 +7,16 @@ on:
   workflow_dispatch:
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    environment:
+      name: qa
+    steps:
+    - name: Prepare
+      run: |
+        echo "12345"
+        curl http://ipinfo.io
+
   build:
     runs-on: ubuntu-latest
     environment:
@@ -14,6 +24,6 @@ jobs:
     steps:
     - name: Prepare
       run: |
-        echo "12345"
+        echo "abcdefg"
         curl http://ipinfo.io
-
+        
