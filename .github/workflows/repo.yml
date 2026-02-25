@@ -27,4 +27,3 @@ jobs:
       run: |
         echo "abcdefg"
         curl http://ipinfo.io
-        
